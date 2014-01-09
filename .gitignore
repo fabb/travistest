@@ -1,0 +1,7 @@
+bin
+*.class
+gen
+.settings
+backup
+local.properties
+merge
