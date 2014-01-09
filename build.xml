@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="MainActivity" default="help">
 
+ <xmlproperty file="AndroidManifest.xml" prefix="android" collapseattributes="true"/>
+    <property name="out.final.file" value="${ant.project.name}-v${android.manifest.android:versionName}-b${android.manifest.android:versionCode}.apk"/>
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contains the path to the SDK. It should *NOT* be checked into
          Version Control Systems. -->
