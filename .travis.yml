@@ -7,7 +7,7 @@ env:
   - secure: OSNKrEvPAypoe6dswENUBFKog2jG4XtfL4IgPgtqb7Rxs5Z5LWTOqTXUcmLhKRkRMmJRYzsb3fiG1PfKgQ2UE/d8jNVouohymzQuUznZlt++tqy+ypnjcunMhhy0JbmM3yQ+zKJs8hxIutTefkEByHm8/OiCPReMF9kUwE6rd4k=
   - secure: R7tjDaXbcH4/f8pTgpkjsx71TmtUvtPZyqaV03frdGmxKqMOfm8YWKSPHJe/woIgL9H5sIKJr/4AoPqWaxl7+qsx8gyCEFGioDeBHQ/CwfKfLZD1IF8rcmNOhyJcGwHt/VL9mf83zPzxogmyf4pcF+cRqTE2sSa3PNYGaVX7CKQ=
 after_success: 
-- curl --ftp-create-dirs -T "*.apk" -u $TABETAUSR:$TABETAPWD "ftp://$TABETAURL/Android/"
+- curl --ftp-create-dirs -T "MainActivity-v1.0-b1.apk" -u $TABETAUSR:$TABETAPWD "ftp://$TABETAURL/Android/"
 before_script: 
 - wait_for_emulator
 before_install: 
